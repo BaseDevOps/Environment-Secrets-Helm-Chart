@@ -1,0 +1,28 @@
+# Default values for chart.
+enabled: true
+
+# The kind of the manifest to be generated
+# Options can be: secret, ConfigMap
+kind: ConfigMap
+
+# type of the secret, if applicable
+secretType: Opaque
+
+# The name of the secret or ConfigMap (defaults to Release.Name)
+name: ""
+
+# Override the namespace passed to helm install command
+namespaceOverride: ""
+
+metadata:
+  labels: {}
+  annotations: {}
+
+# Data available as environment variables should be set inside the data field
+# for example: var FOO: bar should be set by using flag --set FOO=bar
+# Usually, those variables should be set/fetched inside a CI/CD pipeline
+data: {}
+
+# You can specify extra key/value pairs to be added to the generated Manifest
+# Precedence always goes to the values set in the `data` field
+extraData: {}

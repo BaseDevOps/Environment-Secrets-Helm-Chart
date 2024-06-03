@@ -1,0 +1,20 @@
+apiVersion: v2
+name: env-secrets
+type: application
+version: 0.1.0
+description: A Helm Chart to generate secrets and configmaps from sensible data stored as environment variables.
+
+kubeVersion: ">=1.21.0-0"
+
+keywords:
+  - kubernetes
+  - helm
+  - secrets
+  - configmaps
+
+home: https://github.com/BaseDevOps/Parameter-Store-Secrets-Helm-Chart
+
+maintainers:
+  - name: "Bruno Arruda"
+    email: "bruno.arruda@baseservice.io"
+    url: "https://baseservice.io"
